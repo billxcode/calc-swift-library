@@ -56,31 +56,15 @@
 		B7EBF3D723534841009E614C /* CalcLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				B7EBF3EB23534B88009E614C /* Sub */,
-				B7EBF3EA23534B81009E614C /* Main */,
-				B7EBF3D823534841009E614C /* CalcLibrary.h */,
-				B7EBF3D923534841009E614C /* Info.plist */,
-			);
-			path = CalcLibrary;
-			sourceTree = "<group>";
-		};
-		B7EBF3EA23534B81009E614C /* Main */ = {
-			isa = PBXGroup;
-			children = (
 				B7EBF3E02353485D009E614C /* Calc.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		B7EBF3EB23534B88009E614C /* Sub */ = {
-			isa = PBXGroup;
-			children = (
 				B7EBF3E223534889009E614C /* Positif.swift */,
 				B7EBF3E423534892009E614C /* Negatif.swift */,
 				B7EBF3E6235348AA009E614C /* Devided.swift */,
 				B7EBF3E8235348DB009E614C /* Times.swift */,
+				B7EBF3D823534841009E614C /* CalcLibrary.h */,
+				B7EBF3D923534841009E614C /* Info.plist */,
 			);
-			path = Sub;
+			path = CalcLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
