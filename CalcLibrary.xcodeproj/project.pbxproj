@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B7EBF3DA23534841009E614C /* CalcLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EBF3D823534841009E614C /* CalcLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7EBF3E12353485D009E614C /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBF3E02353485D009E614C /* Calc.swift */; };
+		B7EBF3E323534889009E614C /* Positif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBF3E223534889009E614C /* Positif.swift */; };
+		B7EBF3E523534892009E614C /* Negatif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBF3E423534892009E614C /* Negatif.swift */; };
+		B7EBF3E7235348AA009E614C /* Devided.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBF3E6235348AA009E614C /* Devided.swift */; };
+		B7EBF3E9235348DB009E614C /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBF3E8235348DB009E614C /* Times.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7EBF3D523534841009E614C /* CalcLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalcLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EBF3D823534841009E614C /* CalcLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcLibrary.h; sourceTree = "<group>"; };
 		B7EBF3D923534841009E614C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7EBF3E02353485D009E614C /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
+		B7EBF3E223534889009E614C /* Positif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Positif.swift; sourceTree = "<group>"; };
+		B7EBF3E423534892009E614C /* Negatif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Negatif.swift; sourceTree = "<group>"; };
+		B7EBF3E6235348AA009E614C /* Devided.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devided.swift; sourceTree = "<group>"; };
+		B7EBF3E8235348DB009E614C /* Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +56,31 @@
 		B7EBF3D723534841009E614C /* CalcLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B7EBF3EB23534B88009E614C /* Sub */,
+				B7EBF3EA23534B81009E614C /* Main */,
 				B7EBF3D823534841009E614C /* CalcLibrary.h */,
 				B7EBF3D923534841009E614C /* Info.plist */,
 			);
 			path = CalcLibrary;
+			sourceTree = "<group>";
+		};
+		B7EBF3EA23534B81009E614C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B7EBF3E02353485D009E614C /* Calc.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B7EBF3EB23534B88009E614C /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				B7EBF3E223534889009E614C /* Positif.swift */,
+				B7EBF3E423534892009E614C /* Negatif.swift */,
+				B7EBF3E6235348AA009E614C /* Devided.swift */,
+				B7EBF3E8235348DB009E614C /* Times.swift */,
+			);
+			path = Sub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +126,7 @@
 				TargetAttributes = {
 					B7EBF3D423534841009E614C = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EBF3E323534889009E614C /* Positif.swift in Sources */,
+				B7EBF3E7235348AA009E614C /* Devided.swift in Sources */,
+				B7EBF3E523534892009E614C /* Negatif.swift in Sources */,
+				B7EBF3E12353485D009E614C /* Calc.swift in Sources */,
+				B7EBF3E9235348DB009E614C /* Times.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +297,7 @@
 		B7EBF3DE23534841009E614C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C476YGMRCM;
@@ -276,6 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.CalcLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +323,7 @@
 		B7EBF3DF23534841009E614C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C476YGMRCM;
